@@ -2,10 +2,11 @@
 
 sudo -i 
 
-yum install tomcat -y
+yum install tomcat9 -y
 
 systemctl start tomcat
 systemctl enable tomcat
+cp index.html /usr/share/tomcat9
 ssh-keygen
 
 
